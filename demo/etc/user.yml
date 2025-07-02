@@ -1,0 +1,29 @@
+app:
+  name: user
+  path: /
+  port: 8081
+  profile: test
+  version: 1.0.0
+
+nacos:
+  server:
+    ip: 39.108.230.162
+    port: 8848
+  client:
+    port: 8081
+    namespace: coupon
+    group: DEFAULT_GROUP
+    name: coupon
+    username: nacos
+    password: Zf2514385224!
+    weight: 10
+    timeout: 5000
+    data-id: coupon.yaml
+Log:
+  Encoding: plain
+  Level: debug
+  FilePath: /log/demo-api.log
+  MaxSize: 500
+  MaxAge: 7
+  MaxBackups: 3
+  Compress: true
